@@ -1,0 +1,102 @@
+interface Skill {
+    name: string;
+    icon: string;
+}
+
+export const Skills: Skill[] = [
+    { name: 'HTML5', icon: 'html' },
+    { name: 'CSS3', icon: 'css' },
+    { name: 'TypeScript', icon: 'typescript' },
+    { name: 'JavaScript', icon: 'js' },
+    { name: 'Python', icon: 'python' },
+    { name: 'C', icon: 'c' },
+    { name: 'React', icon: 'react' },
+    { name: 'React Native', icon: 'reactNative' },
+    { name: 'Nextjs', icon: 'nextjs' },
+    { name: 'React Router Dom', icon: 'react-router-dom' },
+    { name: 'Recoil', icon: 'recoil' },
+    { name: 'MUI', icon: 'material-ui' },
+    { name: 'Tailwind Css', icon: 'tailwind' },
+    { name: 'Bootstrap', icon: 'bootstrap' },
+    { name: 'Framer Motion', icon: 'framer' },
+    { name: 'Vite', icon: 'vite' },
+    { name: 'NodeJs', icon: 'nodejs' },
+    { name: 'ExpressJs', icon: 'expressjs' },
+    { name: 'HonoJs', icon: 'hono' },
+    { name: 'Socket.io', icon: 'socketjs' },
+    { name: 'WebSockets', icon: 'websocket' },
+    { name: 'MongoDB', icon: 'mongodb' },
+    { name: 'PostgreSQL', icon: 'postgresql' },
+    { name: 'Prisma', icon: 'prisma' },
+    { name: 'Firebase', icon: 'firebase' },
+    { name: 'SQL', icon: 'sql' },
+    { name: 'GitHub', icon: 'githubLink' },
+    { name: 'Git', icon: 'git' },
+    { name: 'Docker', icon: 'docker' },
+    { name: 'Postman', icon: 'postman' },
+    { name: 'Redis', icon: 'redis' },
+    { name: 'Notion', icon: 'notion' },
+    { name: 'Yarn', icon: 'yarn' },
+    { name: 'NPM', icon: 'npm' },
+    { name: 'JWT', icon: 'jsonwebtokens' },
+    { name: 'RecoilJs', icon: 'recoil' },
+    { name: 'Zustand', icon: 'zustand' },
+    { name: 'Netlify', icon: 'netlify' },
+    { name: 'Vercel', icon: 'vercel' },
+    { name: 'Turborepo', icon: 'turborepo' }
+];
+
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    liveLink: string;
+    githubLink: string;
+}
+
+interface OpenSourceContribution {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+}
+
+export const Projects: Project[] = [
+    {
+        id: 1,
+        title: "CoursePros.",
+        description: "An online learning platform for students and teachers.",
+        liveLink: "https://50xcourses.vercel.app/",
+        githubLink: "https://github.com/hanuchaudhary/courseApp"
+    },
+    {
+        id: 2,
+        title: "Instagram",
+        description: "end-to-end instagram clone with chat, reels, etc.",
+        liveLink: "x",
+        githubLink: "https://github.com/hanuchaudhary/instagram"
+    },
+    {
+        id: 3,
+        title: "50xOpportunities",
+        description: "platform where people can create jobs and find and apply for them.",
+        liveLink: "https://50x0pportunities.vercel.app/jobs",
+        githubLink: "https://github.com/hanuchaudhary/50x0pportunities"
+    },
+    {
+        id: 4,
+        title: "Anonymous Comments",
+        description: "application that allows users to share feedback anonymously.",
+        liveLink: "https://anonymous-comments.vercel.app/",
+        githubLink: "https://github.com/hanuchaudhary/anonymous-comments"
+    },
+];
+
+export const OpenSourceContributions: OpenSourceContribution[] = [
+    {
+        id: 1,
+        title: "SWOC/Leetcode-Journal",
+        description: "Social Winter Of Code 2025 project.",
+        image: "/githubLink.svg",
+    },
+];
