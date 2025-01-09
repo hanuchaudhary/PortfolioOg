@@ -59,6 +59,7 @@ interface OpenSourceContribution {
     title: string;
     description: string;
     image: string;
+    link: string;
 }
 
 export const Projects: Project[] = [
@@ -98,5 +99,18 @@ export const OpenSourceContributions: OpenSourceContribution[] = [
         title: "SWOC/Leetcode-Journal",
         description: "Social Winter Of Code 2025 project.",
         image: "/githubLink.svg",
+        link: "https://github.com/hanuchaudhary/Leetcode-Journal"
     },
+];
+
+interface Info {
+    title: string;
+    link: string;
+}
+
+export const InfoArray: Info[] = [
+    { title: "I'm a full-stack engineer from India.", link: "India" },
+    { title: "Write technical blogs on Medium", link: "https://medium.com/@kushchaudharyog" },
+    { title: "Currently pursuing B.Tech in Computer Science.", link: "" },
+    { title: "Let's talk how we can work together!", link: "" },
 ];

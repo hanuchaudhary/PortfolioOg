@@ -2,6 +2,7 @@
 import React from "react";
 import { OpenSourceContributions, Projects, Skills } from "./Data/data";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Home() {
   const infoArray = [
@@ -12,16 +13,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="h-screen  bg-zinc-900 text-white">
+    <div className="h-screen selection:bg-neutral-500 selection:text-white  bg-zinc-900 text-white">
       <motion.div
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
-        transition={{ duration: 1 }}
-        className="max-w-3xl h-full mx-auto p-10"
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl h-full mx-auto p-11"
       >
         <div className="flex justify-between items-center mb-2">
           <h1 className="text-xl tracking-tight font-semibold">
-            Hi, I'm Kush Chaudhary.
+            Hi, I&apos;m Kush Chaudhary.
           </h1>
           <div className="flex items-center justify-center space-x-4">
             {[
@@ -38,33 +39,63 @@ export default function Home() {
                 icon: "/x.svg",
               },
             ].map((social) => (
-              <a target="_blank" rel="noreferrer" href={social.link}>
-                <img src={social.icon} alt="" />
-              </a>
+              <motion.a
+                key={social.link}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                target="_blank"
+                rel="noreferrer"
+                href={social.link}
+              >
+                <Image width={20} height={20} src={social.icon} alt="" />
+              </motion.a>
             ))}
 
-            <h3 className="text-sm text-zinc-500">kushchaudharyog@gmail.com</h3>
+            <a
+              href="mailto:kushchaudharyog@gmail.com"
+              className="text-sm text-zinc-500 hover:text-white hover:underline transition-colors"
+            >
+              kushchaudharyog@gmail.com
+            </a>
           </div>
         </div>
         <div className="info">
-          <ul className="space-y-1">
+          <ul className="space-y-1 text-sm text-neutral-500">
             {infoArray.map((info, index) => (
-              <li key={index} className="text-[15px] text-neutral-500">
-                {info}
+              <li key={index}>
+                •{" "}
+                {info.includes("Medium") ? (
+                  <span>
+                    Write technical blogs on{" "}
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline text-white"
+                      href="https://medium.com/@kushchaudharyog"
+                    >
+                      Medium
+                    </a>
+                    ,
+                  </span>
+                ) : (
+                  info
+                )}
               </li>
             ))}
-            <h1 className="bg-green-200 text-green-950 text-xs border border-green-300 inline-block rounded-full px-2 py-1 ">
+
+            <h1 className="bg-green-200 select-none text-green-950 text-xs border border-green-300 inline-block rounded-full px-2 py-1 ">
               🍻 | Available for freelance work.
             </h1>
           </ul>
         </div>
         <div className="projects mt-4 space-y-3">
           <h1 className="text-xl font-semibold">Projects</h1>
-          <ul>
+          <ul className="space-y-1">
             {Projects.map((project) => (
               <li
                 key={project.id}
-                className="text-[15px] flex justify-between text-neutral-500"
+                className="text-sm flex justify-between text-neutral-500"
               >
                 <div className="flex gap-2">
                   <h1>{project.id}.</h1>
@@ -89,14 +120,14 @@ export default function Home() {
 
         <div className="opensourse mt-5 space-y-3">
           <h1 className="text-xl font-semibold">Open Source Contributions</h1>
-          <ul className="space-y-1 text-[15px] text-neutral-500">
+          <ul className="space-y-1 text-sm text-neutral-500">
             {OpenSourceContributions.map((contribution) => (
               <li key={contribution.id} className="flex items-center gap-2">
-                <img src={contribution.image} alt="" />
+                <Image width={20} height={20} src={"/github.svg"} alt="" />
                 <a
                   target="_blank"
                   className="underline text-white"
-                  href={contribution.title}
+                  href={contribution.link}
                 >
                   {contribution.title}
                 </a>
@@ -112,7 +143,7 @@ export default function Home() {
             {Skills.map((skill) => (
               <motion.li
                 key={skill.name}
-                className="flex items-center text-[15px] mr-1 select-none"
+                className="flex items-center text-sm mr-1 select-none"
                 whileHover={{
                   color: "#f9f9f9",
                   textShadow: "0 0 8px rgba(255, 255, 255, 0.5)",
