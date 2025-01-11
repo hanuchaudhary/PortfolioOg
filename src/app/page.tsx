@@ -1,26 +1,21 @@
 "use client";
+
 import React from "react";
-import { OpenSourceContributions, Projects, Skills } from "./Data/data";
+import { InfoArray, OpenSourceContributions, Projects, Skills } from "./Data/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import {Mail} from "lucide-react";
 
 export default function Home() {
-  const infoArray = [
-    "I'm a full-stack engineer from India.",
-    "Write technical blogs on Medium",
-    "Currently persuing B.Tech in Computer Science.",
-    "Let's talk how we can work together!",
-  ];
-
   return (
-    <div className="h-screen selection:bg-neutral-500 selection:text-white  bg-zinc-900 text-white">
+    <div className="min-h-screen selection:bg-neutral-500 selection:text-white font-mono  bg-zinc-900 text-white">
       <motion.div
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
-        transition={{ duration: 0.8 }}
-        className="max-w-3xl h-full mx-auto p-11"
+        transition={{ duration: 0.6 }}
+        className="max-w-3xl h-full mx-auto md:p-11 px-4 py-10"
       >
-        <div className="flex justify-between items-center mb-2">
+        <div className="flex justify-between md:flex-row flex-col items-center md:mb-2 mb-6 md:gap-0 gap-3">
           <h1 className="text-xl tracking-tight font-semibold">
             Hi, I&apos;m Kush Chaudhary.
           </h1>
@@ -52,17 +47,23 @@ export default function Home() {
               </motion.a>
             ))}
 
-            <a
-              href="mailto:kushchaudharyog@gmail.com"
-              className="text-sm text-zinc-500 hover:text-white hover:underline transition-colors"
-            >
-              kushchaudharyog@gmail.com
-            </a>
+            {typeof window !== "undefined" && window.innerWidth > 768 ? (
+              <a
+                href="mailto:kushchaudharyog@gmail.com"
+                className="text-sm text-zinc-500 hover:text-white hover:underline transition-colors"
+              >
+                kushchaudharyog@gmail.com
+              </a>
+            ) : (
+              <a href="mailto:kushchaudharyog@gmail.com">
+                <Mail size={20} />
+              </a>
+            )}
           </div>
         </div>
         <div className="info">
           <ul className="space-y-1 text-sm text-neutral-500">
-            {infoArray.map((info, index) => (
+            {InfoArray.map((info, index) => (
               <li key={index}>
                 •{" "}
                 {info.includes("Medium") ? (
@@ -89,36 +90,39 @@ export default function Home() {
             </h1>
           </ul>
         </div>
-        <div className="projects mt-4 space-y-3">
+        <div className="projects mt-6 space-y-3">
           <h1 className="text-xl font-semibold">Projects</h1>
           <ul className="space-y-1">
             {Projects.map((project) => (
-              <li
-                key={project.id}
-                className="text-sm flex justify-between text-neutral-500"
-              >
-                <div className="flex gap-2">
-                  <h1>{project.id}.</h1>
-                  <a className="text-white underline" href={project.liveLink}>
-                    {project.title}
-                  </a>
-                  <p>{project.description}</p>
-                </div>
+              <li key={project.id} className="text-sm  text-neutral-500">
+                <div className="flex items-center justify-between">
+                  <span className="flex">
+                    <h1>{project.id}. </h1>
+                    <a
+                      target="_blank"
+                      className="text-white underline"
+                      href={project.liveLink}
+                    >
+                      {project.title}
+                    </a>
+                    <p className="md:block hidden pl-2">{project.description}</p>
+                  </span>
 
-                <a
-                  className="text-white underline"
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  github
-                </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    className="text-white underline"
+                  >
+                    repo
+                  </a>
+                </div>
+                <p className="md:hidden block mt-1.5">{project.description}</p>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="opensourse mt-5 space-y-3">
+        <div className="opensourse mt-6 space-y-3">
           <h1 className="text-xl font-semibold">Open Source Contributions</h1>
           <ul className="space-y-1 text-sm text-neutral-500">
             {OpenSourceContributions.map((contribution) => (
@@ -137,7 +141,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="skills mt-4 space-y-3">
+        <div className="skills mt-6 space-y-3">
           <h1 className="text-xl font-semibold">Skills and tech</h1>
           <ul className="flex flex-wrap text-neutral-500">
             {Skills.map((skill) => (

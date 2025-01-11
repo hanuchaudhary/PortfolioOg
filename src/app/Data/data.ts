@@ -3,6 +3,22 @@ interface Skill {
     icon: string;
 }
 
+interface Project {
+    id: number;
+    title: string;
+    description: string;
+    liveLink: string;
+    githubLink: string;
+}
+
+interface OpenSourceContribution {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    link: string;
+}
+
 export const Skills: Skill[] = [
     { name: 'HTML5', icon: 'html' },
     { name: 'CSS3', icon: 'css' },
@@ -46,22 +62,6 @@ export const Skills: Skill[] = [
     { name: 'Turborepo', icon: 'turborepo' }
 ];
 
-interface Project {
-    id: number;
-    title: string;
-    description: string;
-    liveLink: string;
-    githubLink: string;
-}
-
-interface OpenSourceContribution {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
-    link: string;
-}
-
 export const Projects: Project[] = [
     {
         id: 1,
@@ -103,14 +103,9 @@ export const OpenSourceContributions: OpenSourceContribution[] = [
     },
 ];
 
-interface Info {
-    title: string;
-    link: string;
-}
-
-export const InfoArray: Info[] = [
-    { title: "I'm a full-stack engineer from India.", link: "India" },
-    { title: "Write technical blogs on Medium", link: "https://medium.com/@kushchaudharyog" },
-    { title: "Currently pursuing B.Tech in Computer Science.", link: "" },
-    { title: "Let's talk how we can work together!", link: "" },
+export const InfoArray: string[] = [
+    "I'm a full-stack engineer from India.",
+    "Write technical blogs on Medium",
+    "Currently pursuing B.Tech in Computer Science.",
+    "Let's talk how we can work together!",
 ];
