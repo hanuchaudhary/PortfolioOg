@@ -19,6 +19,12 @@ interface OpenSourceContribution {
     link: string;
 }
 
+interface Blogs {
+    title: string;
+    link: string;
+    Date: string;
+}
+
 export const Skills: Skill[] = [
     { name: 'HTML5', icon: 'html' },
     { name: 'CSS3', icon: 'css' },
@@ -109,3 +115,10 @@ export const InfoArray: string[] = [
     "Currently pursuing B.Tech in Computer Science.",
     "Let's talk how we can work together!",
 ];
+
+export const Blogs: Blogs[] = [
+    {
+        title: "Setting Up Tailwind CSS in a Django Project on Windows",
+        link: "https://medium.com/@kushchaudharyog/setting-up-tailwind-css-in-a-django-project-on-windows-ffe0d2132cdc",
+        Date: "Dec 26, 2024",
+    },]

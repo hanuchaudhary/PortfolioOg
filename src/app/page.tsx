@@ -1,10 +1,16 @@
 "use client";
 
 import React from "react";
-import { InfoArray, OpenSourceContributions, Projects, Skills } from "./Data/data";
+import {
+  Blogs,
+  InfoArray,
+  OpenSourceContributions,
+  Projects,
+  Skills,
+} from "./Data/data";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import {Mail} from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -50,7 +56,7 @@ export default function Home() {
             {typeof window !== "undefined" && window.innerWidth > 768 ? (
               <a
                 href="mailto:kushchaudharyog@gmail.com"
-                className="text-sm text-zinc-500 hover:text-white hover:underline transition-colors"
+                className="text-sm text-zinc-500 hover:underline hover:text-emerald-100 transition-colors"
               >
                 kushchaudharyog@gmail.com
               </a>
@@ -72,7 +78,7 @@ export default function Home() {
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      className="underline text-white"
+                      className="underline hover:text-emerald-100 transition-colors text-white"
                       href="https://medium.com/@kushchaudharyog"
                     >
                       Medium
@@ -90,8 +96,8 @@ export default function Home() {
             </h1>
           </ul>
         </div>
-        <div className="projects mt-6 space-y-3">
-          <h1 className="text-xl font-semibold">Projects</h1>
+        <div className="projects mt-6 space-y-2">
+          <h1 className="text-lg font-semibold">Projects</h1>
           <ul className="space-y-1">
             {Projects.map((project) => (
               <li key={project.id} className="text-sm  text-neutral-500">
@@ -100,18 +106,20 @@ export default function Home() {
                     <h1>{project.id}. </h1>
                     <a
                       target="_blank"
-                      className="text-white underline"
+                      className="text-white underline hover:text-emerald-100 transition-colors"
                       href={project.liveLink}
                     >
                       {project.title}
                     </a>
-                    <p className="md:block hidden pl-2">{project.description}</p>
+                    <p className="md:block hidden pl-2">
+                      {project.description}
+                    </p>
                   </span>
 
                   <a
                     href={project.githubLink}
                     target="_blank"
-                    className="text-white underline"
+                    className="text-white underline hover:text-emerald-100 transition-colors"
                   >
                     repo
                   </a>
@@ -122,15 +130,15 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="opensourse mt-6 space-y-3">
-          <h1 className="text-xl font-semibold">Open Source Contributions</h1>
+        <div className="opensourse mt-6 space-y-2">
+          <h1 className="text-lg font-semibold">Open Source Contributions</h1>
           <ul className="space-y-1 text-sm text-neutral-500">
             {OpenSourceContributions.map((contribution) => (
               <li key={contribution.id} className="flex items-center gap-2">
                 <Image width={20} height={20} src={"/github.svg"} alt="" />
                 <a
                   target="_blank"
-                  className="underline text-white"
+                  className="underline hover:text-emerald-100 transition-colors text-white"
                   href={contribution.link}
                 >
                   {contribution.title}
@@ -141,8 +149,26 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="skills mt-6 space-y-3">
-          <h1 className="text-xl font-semibold">Skills and tech</h1>
+        <div className="blogs mt-6 space-y-2">
+          <h1 className="text-lg font-semibold">Blogs</h1>
+          <ul className="text-sm text-neutral-500">
+            {Blogs.map((blog) => (
+              <li key={blog.title} className="flex justify-between items-center gap-2">
+                <a
+                  target="_blank"
+                  className="underline hover:text-emerald-100 transition-colors text-white"
+                  href={blog.link}
+                >
+                  {blog.title}
+                </a>
+                <p>{blog.Date}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="skills mt-6 space-y-2">
+          <h1 className="text-lg font-semibold">Skills and tech</h1>
           <ul className="flex flex-wrap text-neutral-500">
             {Skills.map((skill) => (
               <motion.li
