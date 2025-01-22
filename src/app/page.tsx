@@ -97,8 +97,8 @@ export default function Home() {
           </ul>
         </div>
 
-        <div>
-          <h2>Currently working on</h2>
+        <div className="projects mt-6 space-y-2">
+          <h2 className="text-lg font-semibold">Currently working on</h2>
           <div className="flex items-center justify-between">
             <div className="flex text-sm">
               <a
@@ -113,13 +113,13 @@ export default function Home() {
                 platforms.
               </p>
             </div>
-              <span className="h-2 w-2 bg-green-500 rounded-full"></span>
+            <span className="h-2 w-2 bg-green-500 rounded-full"></span>
           </div>
         </div>
         <div className="projects mt-6 space-y-2">
           <h1 className="text-lg font-semibold">Projects</h1>
           <ul className="space-y-2">
-            {Projects.map((project, idx) => (
+            {Projects.map((project) => (
               <li key={project.id} className="text-sm  text-neutral-500">
                 <div className="flex items-center justify-between">
                   <span className="flex">
