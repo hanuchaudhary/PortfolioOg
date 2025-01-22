@@ -14,7 +14,7 @@ import { Mail } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen selection:bg-neutral-500 selection:text-white font-mono  bg-zinc-900 text-white">
+    <div className="min-h-screen selection:bg-neutral-500 selection:text-white font-mono tracking-tight  bg-zinc-900 text-white">
       <motion.div
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
@@ -96,14 +96,33 @@ export default function Home() {
             </h1>
           </ul>
         </div>
+
+        <div>
+          <h2>Currently working on</h2>
+          <div className="flex items-center justify-between">
+            <div className="flex text-sm">
+              <a
+                target="_blank"
+                href="https://crossposthub.vercel.app/"
+                className="text-white underline hover:text-emerald-100 transition-colors"
+              >
+                CrossPostHub.
+              </a>
+              <p className="text-neutral-500 pl-2">
+                SaaS platform for cross-posting content on multiple social media
+                platforms.
+              </p>
+            </div>
+              <span className="h-2 w-2 bg-green-500 rounded-full"></span>
+          </div>
+        </div>
         <div className="projects mt-6 space-y-2">
           <h1 className="text-lg font-semibold">Projects</h1>
-          <ul className="space-y-1">
-            {Projects.map((project) => (
+          <ul className="space-y-2">
+            {Projects.map((project, idx) => (
               <li key={project.id} className="text-sm  text-neutral-500">
                 <div className="flex items-center justify-between">
                   <span className="flex">
-                    <h1>{project.id}. </h1>
                     <a
                       target="_blank"
                       className="text-white underline hover:text-emerald-100 transition-colors"
@@ -153,7 +172,10 @@ export default function Home() {
           <h1 className="text-lg font-semibold">Blogs</h1>
           <ul className="text-sm text-neutral-500">
             {Blogs.map((blog) => (
-              <li key={blog.title} className="flex justify-between items-center gap-2">
+              <li
+                key={blog.title}
+                className="flex justify-between items-center gap-2"
+              >
                 <a
                   target="_blank"
                   className="underline hover:text-emerald-100 transition-colors text-white"
