@@ -120,4 +120,10 @@ export const Blogs: Blogs[] = [
         title: "Setting Up Tailwind CSS in a Django Project on Windows",
         link: "https://medium.com/@kushchaudharyog/setting-up-tailwind-css-in-a-django-project-on-windows-ffe0d2132cdc",
         Date: "Dec 26, 2024",
-    },]
+    },
+    {
+        title: "How to Integrate Razorpay in Next.js 14/15 with Easy Steps.",
+        link: "https://medium.com/@kushchaudharyog/how-to-integrate-razorpay-in-next-js-14-15-with-easy-steps-f2d80772009c",
+        Date: "Jan 24, 2025",
+    },
+]
