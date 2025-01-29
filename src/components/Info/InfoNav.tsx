@@ -7,7 +7,7 @@ export default function InfoNav() {
   return (
     <div className="flex justify-between md:flex-row flex-col items-center md:mb-2 mb-6 md:gap-0 gap-3">
       <h1 className="text-xl tracking-tight font-semibold">
-        Hi, I&apos;m Kush Chaudhary.
+        Hi, I&apos;m Kush Chaudhary⚡
       </h1>
       <div className="flex items-center justify-center space-x-4">
         {[

@@ -3,7 +3,7 @@ import React from "react";
 
 export function WritingsPage() {
   return (
-    <div className="blogs mt-6 space-y-2">
+    <div className="space-y-1">
       <h1 className="text-lg font-semibold">Writings</h1>
       <ul className="text-sm text-neutral-400">
         {Blogs.map((blog) => (

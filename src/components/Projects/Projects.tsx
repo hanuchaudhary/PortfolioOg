@@ -3,9 +3,9 @@ import React from "react";
 
 export default function ProjectsPage() {
   return (
-    <div className="projects mt-6 space-y-2">
+    <div className="space-y-1">
       <h1 className="text-lg font-semibold">Projects</h1>
-      <ul className="space-y-2">
+      <ul className="space-y-1">
         {Projects.map((project) => (
           <li key={project.id} className="text-sm  text-neutral-400">
             <div className="flex items-center justify-between">

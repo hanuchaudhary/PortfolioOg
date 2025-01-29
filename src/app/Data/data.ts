@@ -1,8 +1,3 @@
-interface Skill {
-    name: string;
-    icon: string;
-}
-
 interface Project {
     id: number;
     title: string;
@@ -25,46 +20,41 @@ interface Blogs {
     Date: string;
 }
 
-export const Skills: Skill[] = [
-    { name: 'TypeScript', icon: 'typescript' },
-    { name: 'JavaScript', icon: 'js' },
-    { name: 'Python', icon: 'python' },
-    { name: 'React', icon: 'react' },
-    { name: 'Nextjs', icon: 'nextjs' },
-    { name: 'React Native', icon: 'reactNative' },
-    { name: 'NodeJs', icon: 'nodejs' },
-    { name: 'ExpressJs', icon: 'expressjs' },
-    { name: 'HonoJs', icon: 'hono' },
-    { name: 'Socket.io', icon: 'socketjs' },
-    { name: 'WebSockets', icon: 'websocket' },
-    { name: 'MongoDB', icon: 'mongodb' },
-    { name: 'PostgreSQL', icon: 'postgresql' },
-    { name: 'Prisma', icon: 'prisma' },
-    { name: 'RecoilJs', icon: 'recoil' },
-    { name: 'Firebase', icon: 'firebase' },
-    { name: 'SQL', icon: 'sql' },
-    { name: 'GitHub', icon: 'githubLink' },
-    { name: 'Tailwind Css', icon: 'tailwind' },
-    { name: 'Framer Motion', icon: 'framer' },
-    { name: 'Postman', icon: 'postman' },
-    { name: 'Docker', icon: 'docker' },
-    { name: 'Redis', icon: 'redis' },
-    { name: 'Notion', icon: 'notion' },
-    { name: 'Zustand', icon: 'zustand' },
-    { name: 'Turborepo', icon: 'turborepo' },
-    { name: 'C', icon: 'c' },
-    { name: 'HTML5', icon: 'html' },
-    { name: 'CSS3', icon: 'css' },
-    { name: 'React Router Dom', icon: 'react-router-dom' },
-    { name: 'MUI', icon: 'material-ui' },
-    { name: 'Bootstrap', icon: 'bootstrap' },
-    { name: 'Vite', icon: 'vite' },
-    { name: 'Git', icon: 'git' },
-    { name: 'Yarn', icon: 'yarn' },
-    { name: 'NPM', icon: 'npm' },
-    { name: 'JWT', icon: 'jsonwebtokens' },
-    { name: 'Netlify', icon: 'netlify' },
-    { name: 'Vercel', icon: 'vercel' },
+export const Skills: string[] = [
+    'TypeScript',
+    'JavaScript',
+    'React',
+    'Nextjs',
+    'NodeJs',
+    'Tailwind Css',
+    'ExpressJs',
+    'HonoJs',
+    'MongoDB',
+    'Prisma',
+    'PostgreSQL',
+    'Framer Motion',
+    'Socket.io',
+    'C',
+    'HTML5',
+    'CSS3',
+    'Postman',
+    'Docker',
+    'Redis',
+    'Python',
+    'Firebase',
+    'GitHub',
+    'RecoilJs',
+    'Turborepo',
+    'Zustand',
+    'WebSockets',
+    'React Native',
+    'Notion',
+    'React Router Dom',
+    'MUI',
+    'Bootstrap',
+    'Git',
+    'Netlify',
+    'Vercel',
 ];
 
 export const Projects: Project[] = [
@@ -108,21 +98,14 @@ export const OpenSourceContributions: OpenSourceContribution[] = [
     },
 ];
 
-export const InfoArray: string[] = [
-    "I'm a full-stack engineer from India.",
-    "Write technical blogs on Medium",
-    "Currently pursuing B.Tech in Computer Science.",
-    "Let's talk how we can work together!",
-];
-
 export const Blogs: Blogs[] = [
     {
-        title: "Setting Up Tailwind CSS in a Django Project on Windows",
+        title: "Setting up Tailwind CSS in a dJango project on windows",
         link: "https://medium.com/@kushchaudharyog/setting-up-tailwind-css-in-a-django-project-on-windows-ffe0d2132cdc",
         Date: "Dec 26, 2024",
     },
     {
-        title: "How to Integrate Razorpay in Next.js 14/15 with Easy Steps.",
+        title: "How to integrate RazorPay in Next.js 14/15 with easy steps.",
         link: "https://medium.com/@kushchaudharyog/how-to-integrate-razorpay-in-next-js-14-15-with-easy-steps-f2d80772009c",
         Date: "Jan 24, 2025",
     },

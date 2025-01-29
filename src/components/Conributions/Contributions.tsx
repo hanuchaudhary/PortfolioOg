@@ -4,7 +4,7 @@ import React from "react";
 
 export function Contributions() {
   return (
-    <div className="opensourse mt-6 space-y-2">
+    <div className="space-y-1">
       <h1 className="text-lg font-semibold">Open Source Contributions</h1>
       <ul className="space-y-1 text-sm text-neutral-400">
         {OpenSourceContributions.map((contribution) => (

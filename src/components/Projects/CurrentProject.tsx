@@ -2,7 +2,7 @@ import React from "react";
 
 export function CurrentProject() {
   return (
-    <div className="projects mt-6 space-y-2">
+    <div className="projects mt-6 space-y-1">
       <h2 className="text-lg font-semibold">Currently working on</h2>
       <div className="flex items-center justify-between">
         <div className="flex text-sm">
