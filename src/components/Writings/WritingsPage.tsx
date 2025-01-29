@@ -18,7 +18,7 @@ export function WritingsPage() {
             >
               {blog.title}
             </a>
-            <p>{blog.Date}</p>
+            <p className="text-xs">{blog.Date}</p>
           </li>
         ))}
       </ul>

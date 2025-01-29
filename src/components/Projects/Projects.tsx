@@ -7,12 +7,12 @@ export default function ProjectsPage() {
       <h1 className="text-lg font-semibold">Projects</h1>
       <ul className="space-y-1">
         {Projects.map((project) => (
-          <li key={project.id} className="text-sm  text-neutral-400">
+          <li key={project.id} className="text-sm text-neutral-400">
             <div className="flex items-center justify-between">
               <span className="flex">
                 <a
                   target="_blank"
-                  className="text-white underline hover:text-emerald-100 transition-colors"
+                  className="text-neutral-100 underline hover:text-emerald-100 transition-colors"
                   href={project.liveLink}
                 >
                   {project.title}
@@ -23,7 +23,7 @@ export default function ProjectsPage() {
               <a
                 href={project.githubLink}
                 target="_blank"
-                className="text-white underline hover:text-emerald-100 transition-colors"
+                className="text-neutral-100 transition-colors"
               >
                 repo
               </a>

@@ -11,7 +11,7 @@ export function CurrentProject() {
             href="https://crossposthub.vercel.app/"
             className="text-white underline hover:text-emerald-100 transition-colors"
           >
-            CrossPostHub.
+            CrossPostHub
           </a>
           <p className="text-neutral-400 pl-2">
             SaaS platform for cross-posting content on multiple social media

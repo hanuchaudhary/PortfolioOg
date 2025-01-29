@@ -60,7 +60,7 @@ export const Skills: string[] = [
 export const Projects: Project[] = [
     {
         id: 1,
-        title: "CoursePros.",
+        title: "CoursePros",
         description: "An online learning platform for students and teachers.",
         liveLink: "https://50xcourses.vercel.app/",
         githubLink: "https://github.com/hanuchaudhary/courseApp"

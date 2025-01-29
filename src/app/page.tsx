@@ -12,7 +12,7 @@ import InfoNav from "@/components/Info/InfoNav";
 
 export default function Home() {
   return (
-    <div className="min-h-screen selection:bg-neutral-400 selection:text-white bg-zinc-900 text-white">
+    <div className="min-h-screen selection:bg-neutral-400 selection:text-white font-mono text-white">
       <motion.div
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
