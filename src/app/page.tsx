@@ -20,6 +20,7 @@ export default function Home() {
         className="max-w-3xl h-full mx-auto space-y-4 md:p-11 px-4 py-10"
       >
         <InfoNav />
+        
         <Info />
 
         <CurrentProject />

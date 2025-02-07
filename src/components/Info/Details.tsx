@@ -10,7 +10,7 @@ export function Info() {
             Write technical blogs on{" "}
             <span>
               <a
-                href="https://dev.to/ashutoshdwivedi"
+                href="https://dev.to/hanuchaudhary"
                 target="_blank"
                 className="text-emerald-100 underline"
               >
@@ -18,7 +18,7 @@ export function Info() {
               </a>{" "}
               and {" "}
               <a
-                href="https://hashnode.com/@ashutoshdwivedi"
+                href="https://medium.com/@kushchaudharyog"
                 target="_blank"
                 className="text-emerald-100 underline"
               >
