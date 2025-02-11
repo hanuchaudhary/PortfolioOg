@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: "Writing | Kush Chaudhary",
+  title: "Writings | Kush Chaudhary",
   description: "Writings I have",
 };
 

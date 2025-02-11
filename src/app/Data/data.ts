@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
         id: 1,
         title: "CoursePros",
         description: "An online learning platform for students and teachers. It allows users to purchase courses, take classes, and track their learning progress.",
-        technologies: ["next-js", "tailwind Css", "postgreSQL", "auth.js", "razorpay","framer-motion","shadcn-ui"],
+        technologies: ["next-js", "tailwind Css", "postgreSQL", "auth.js", "razorpay", "framer-motion", "shadcn-ui"],
         learnings: [
             "First Next.js app, learning Next.js app routing",
             "payment gateway integration, using Razorpay",
@@ -101,6 +101,47 @@ export const projectsData: Project[] = [
             "resend",
         ],
     },
+    {
+        id: 5,
+        title: "rePay",
+        description: "A peer-to-peer payment application that allows users to send and receive money from friends and family.",
+        liveLink: "https://repay-three.vercel.app/",
+        githubLink: "https://github.com/hanuchaudhary/paytm-react",
+        learnings: [
+            "Transaction implementation in database",
+            "User authentication",
+            "User transaction history",
+            "serverless backend using HonoJs",
+        ],
+        technologies: [
+            "react.js",
+            "Tailwind Css",
+            "postgreSQL",
+            "HonoJs",
+            "JWT",
+            "Framer Motion",
+            "cloudflare",
+        ],
+    }, {
+        id: 6,
+        title: "Medium Clone",
+        description: "A clone of the Medium website that allows users to read and write articles on various topics.",
+        liveLink: "https://medium-blog-6pkc.vercel.app/",
+        githubLink: "https://github.com/hanuchaudhary/medium-blog",
+        learnings: [
+            "Article posting and fetching",
+            "User authentication",
+            "Article search and filtering",
+        ],
+        technologies: [
+            "react.js",
+            "HonoJs",
+            "Tailwind Css",
+            "JWT",
+            "postgreSQL",
+            "cloudflare",
+        ],
+    }
 ];
 
 export const OpenSourceContributions: OpenSourceContribution[] = [
