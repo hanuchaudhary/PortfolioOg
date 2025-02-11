@@ -13,7 +13,7 @@ export function SkillsPage() {
       </div>
       <div className="mt-8 flex flex-wrap gap-1">
         {skillsData.map((skill) => (
-          <SkillTag skill={skill} />
+          <SkillTag key={skill} skill={skill} />
         ))}
       </div>
     </div>

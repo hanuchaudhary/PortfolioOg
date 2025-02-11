@@ -18,7 +18,7 @@ export function Info() {
       </h2>
 
       <Description>
-        I'm a 20 y/o full-stack engineer, currently pursuing B.Tech in Computer Science
+        I&apos;m a 20 y/o full-stack engineer, currently pursuing B.Tech in Computer Science
         with niche expertise in building highly robust, secure, and scalable
         applications using the latest and most efficient technologies. My
         mission is to deliver innovative solutions that create value for

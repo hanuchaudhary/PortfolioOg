@@ -1,9 +1,9 @@
 "use client";
 
-import { log } from "console";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
+
 const links = [
   { href: "/", text: "home", key: "h" },
   { href: "/writings", text: "writings", key: "w" },
@@ -28,7 +28,7 @@ export default function Navbar() {
     return () => {
       document.removeEventListener("keypress", handleKeyPress);
     };
-  }, []);
+  });
 
   return (
     <nav className="flex max-w-4xl mx-auto pb-8 text-sm text-muted-foreground items-center gap-2 md:gap-4">
