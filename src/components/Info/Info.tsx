@@ -7,7 +7,7 @@ export function Info() {
   return (
     <div>
       <HyperText className="text-4xl lowercase">Kush Chaudhary</HyperText>
-      <h2 className="text-muted-foreground flex items-center gap-3">
+      <h2 className="text-muted-foreground flex items-center gap-3 mb-2">
         Uttar Pradesh, India{" "}
         <Image
           src={"/Flag_of_India.svg.webp"}

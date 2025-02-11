@@ -1,26 +1,37 @@
-import React from "react";
+"use client"
+
+import { useMemo } from "react"
+
+const highlightedSkills = [
+  "typescript",
+  "react",
+  "node.js",
+  "express",
+  "next.js",
+  "tailwind css",
+  "postgresql",
+  "mongodb",
+  "docker",
+  "javascript",
+  "github"
+]
 
 export function SkillTag({ skill }: { skill: string }) {
-  const highlightedSkills = [
-    "TypeScript",
-    "React",
-    "Node.js",
-    "Express",
-    "Next.js",
-    "Tailwind CSS",
-    "PostgreSQL",
-    "MongoDB",
-    "Docker",
-    "JavaScript",
-  ];
+  const isHighlighted = useMemo(() => highlightedSkills.includes(skill.toLowerCase()), [skill])
 
   return (
     <span
-      className={`md:text-base text-sm ${
-        highlightedSkills.includes(skill) && "text-blue-500"
-      } bg-neutral-900 border lowercase hover:text-blue-500 transition-colors duration-300 border-neutral-700 px-4 py-2 text-neutral-300 flex items-center justify-center select-none`}
+      className={`
+        md:text-base text-sm 
+        ${isHighlighted ? "text-blue-500" : "text-neutral-300"}
+        bg-neutral-900 border hover:text-blue-500 
+        transition-colors duration-300 border-neutral-700 
+        px-4 py-2 flex items-center justify-center select-none
+      `}
+      aria-label={`Skill: ${skill}`}
     >
-      {skill}
+      {skill.toLowerCase()}
     </span>
-  );
+  )
 }
+
