@@ -2,7 +2,7 @@ export interface Project {
     id: number;
     title: string;
     description: string;
-    liveLink: string;
+    liveLink?: string;
     githubLink: string;
     technologies?: string[];
     learnings?: string[];
@@ -23,78 +23,83 @@ export interface Writings {
 }
 
 export const skillsData: string[] = [
-    'TypeScript',
-    'JavaScript',
-    'React',
-    'Nextjs',
-    'NodeJs',
-    'Tailwind Css',
-    'ExpressJs',
-    'HonoJs',
-    'MongoDB',
-    'Prisma',
-    'PostgreSQL',
-    'Framer Motion',
-    'Socket.io',
-    'C',
-    'HTML5',
-    'CSS3',
-    'Postman',
-    'Docker',
-    'Redis',
-    'Python',
-    'Firebase',
-    'GitHub',
-    'RecoilJs',
-    'Turborepo',
-    'Zustand',
-    'WebSockets',
-    'React Native',
-    'Notion',
-    'React Router Dom',
-    'MUI',
-    'Bootstrap',
-    'Git',
-    'Netlify',
-    'Vercel',
+    "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Sass",
+    "JavaScript", "React", "React Router", "React Hook Form",
+    "Git", "GitHub", "GitHub Actions", "Netlify", "Vercel",
+    "NPM", "Yarn", "Node.js", "Express", "Markdown",
+    "TypeScript", "Next.js", "Remix", "Firebase",
+    "MongoDB", "MySQL", "PostgreSQL", "Redis", "Supabase",
+    "Nginx", "Cloudflare", "BullMQ", "Nodemon", "Socket.io",
+    "JWT", "Auth.js",
+    "ESLint", "Storybook", "Postman", "Monorepo",
+    "GNU Bash", "Powershell", "Python", "Docker", "Amazon AWS",
+    "Nginx", "Redis", "Cloudflare",
+    "React Native", "Vite", "Blender",
+    "C", "Stack Overflow"
 ];
 
 export const projectsData: Project[] = [
     {
         id: 1,
         title: "CoursePros",
-        description: "An online learning platform for students and teachers.",
-        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
-        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        description: "An online learning platform for students and teachers. It allows users to purchase courses, take classes, and track their learning progress.",
+        technologies: ["next-js", "tailwind Css", "postgreSQL", "auth.js", "razorpay","framer-motion","shadcn-ui"],
+        learnings: [
+            "First Next.js app, learning Next.js app routing",
+            "payment gateway integration, using Razorpay",
+            "authentication in Next.js",
+        ],
         liveLink: "https://50xcourses.vercel.app/",
         githubLink: "https://github.com/hanuchaudhary/courseApp"
     },
     {
         id: 2,
         title: "Instagram",
-        description: "end-to-end instagram clone with chat, reels, etc.",
-        liveLink: "x",
+        description: "An end-to-end Instagram clone with features like chat, reels, and more.",
         githubLink: "https://github.com/hanuchaudhary/instagram",
-        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
-        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        technologies: ["React", "Tailwind Css", "postgreSQL", "expressJs", "socket.io", "zustand", "JWT", "Framer Motion", "Cloudinary"],
+        learnings: [
+            "Shared state management using zustand",
+            "Real-time chat using socket.io",
+            "Reels feature using Framer Motion",
+            "Authentication using JWT",
+        ],
     },
     {
         id: 3,
         title: "50xOpportunities",
-        description: "platform where people can create jobs and find and apply for them.",
+        description: "A platform where people can create jobs, find and apply for them. It connects job seekers with employers.",
         liveLink: "https://50x0pportunities.vercel.app/jobs",
         githubLink: "https://github.com/hanuchaudhary/50x0pportunities",
-        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
-        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        learnings: [
+            "Job creation and application feature",
+            "User authentication",
+            "User roles and permissions",
+            "Job search and filtering",
+        ],
+        technologies: ["reactJs", "Tailwind Css", "postgreSQl", "HonoJs", "prisma"],
     },
     {
         id: 4,
         title: "Anonymous Comments",
-        description: "application that allows users to share feedback anonymously.",
+        description: "An application that allows users to share feedback anonymously. It ensures privacy and encourages honest feedback.",
         liveLink: "https://anonymous-comments.vercel.app/",
         githubLink: "https://github.com/hanuchaudhary/anonymous-comments",
-        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
-        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        learnings: [
+            "authentication using next-auth",
+            "AI-based comment moderation",
+            "mailing feature using resend",
+            "comment posting and fetching",
+        ],
+        technologies: [
+            "Next.js",
+            "Tailwind Css",
+            "MongoDB",
+            "Next-auth",
+            "shad-cn",
+            "gemini",
+            "resend",
+        ],
     },
 ];
 

@@ -9,7 +9,7 @@ export function H3Heading({
 }) {
   return (
     <h3
-      className={`text-xl font-semibold group-hover:text-blue-500 transition-colors duration-300 ${className}`}
+      className={`md:text-xl text-base text-blue-50 font-semibold group-hover:text-blue-500 transition-colors duration-300 ${className}`}
     >
       {children}
     </h3>

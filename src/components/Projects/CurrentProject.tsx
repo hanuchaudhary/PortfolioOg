@@ -1,7 +1,7 @@
 import React from "react";
 import { H2Heading } from "../H2Heading";
 import { H3Heading } from "../H3Heading";
-import { Star } from "../Star";
+import Description from "../Description";
 
 export function CurrentProject() {
   return (
@@ -9,21 +9,24 @@ export function CurrentProject() {
       <H2Heading>currently working on</H2Heading>
       <div className="flex flex-col">
         <H3Heading>
-          <h3 className="font-semibold text-xl">
+          <span className="font-semibold text-xl w-full">
             <a
               target="_blank"
               href="https://crossposthub.vercel.app/"
-              className="hover:text-emerald-100 transition-colors"
+              className="hover:text-blue-100 transition-colors"
             >
-              CrossPostHub
+              CrossPostHub{" "}
             </a>
-          </h3>
+            <span className="h-10 w-10 bg-green-400 rounded-full"></span>
+          </span>
         </H3Heading>
-        <p className="text-muted-foreground">
+        <Description>
           SaaS platform for cross-posting content on multiple social media
-          platforms.
-        </p>
-        <span className="h-2 w-2 bg-green-400 rounded-full"></span>
+          platforms. This tool helps users to efficiently manage and distribute
+          their content across various social networks, saving time and effort.
+          It includes features like scheduling and AI caption to ensure the best
+          performance for each post.
+        </Description>
       </div>
     </div>
   );

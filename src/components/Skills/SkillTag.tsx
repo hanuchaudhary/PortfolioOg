@@ -1,9 +1,26 @@
 import React from "react";
 
 export function SkillTag({ skill }: { skill: string }) {
+  const highlightedSkills = [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Express",
+    "Next.js",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "MongoDB",
+    "Docker",
+    "JavaScript",
+  ];
+
   return (
-    <li className="flex bg-neutral-800 border hover:text-white transition-colors border-neutral-700 px-4 py-2 mb-1 text-neutral-300 items-center text-base mr-1 select-none">
-      <span>{skill}</span>
-    </li>
+    <span
+      className={`md:text-base text-sm ${
+        highlightedSkills.includes(skill) && "text-blue-500"
+      } bg-neutral-900 border lowercase hover:text-blue-500 transition-colors duration-300 border-neutral-700 px-4 py-2 text-neutral-300 flex items-center justify-center select-none`}
+    >
+      {skill}
+    </span>
   );
 }

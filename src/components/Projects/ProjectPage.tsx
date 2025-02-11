@@ -9,7 +9,7 @@ export default function ProjectPage() {
     <div className="max-w-4xl mx-auto min-h-screen">
       <div className="flex text-4xl font-semibold items-center gap-2">
         <Star />
-        <HyperText startOnView={true}>projects</HyperText>
+        <HyperText>projects</HyperText>
       </div>
       <div className="mt-6 space-y-10">
         {projectsData.map((project, index) => (

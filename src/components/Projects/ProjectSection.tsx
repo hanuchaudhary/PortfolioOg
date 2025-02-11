@@ -2,6 +2,8 @@ import { projectsData } from "@/app/Data/data";
 import React from "react";
 import ProjectTile from "./ProjectTile";
 import { H2Heading } from "../H2Heading";
+import Link from "next/link";
+import { ArrowRightLeft, ArrowUpRight } from "lucide-react";
 
 export function ProjectsSection() {
   return (
@@ -12,6 +14,9 @@ export function ProjectsSection() {
           <ProjectTile project={project} />
         ))}
       </div>
+      <Link href="/projects" className="flex items-center text-lg font-semibold text-blue-500 hover:underline">
+        View more projects <ArrowUpRight />
+      </Link>
     </div>
   );
 }

@@ -2,17 +2,16 @@ import React from "react";
 import { SkillsSection } from "@/components/Skills/SkillsSection";
 import { WritingsSection } from "@/components/Writings/WritingsSection";
 import { Contributions } from "@/components/Conributions/Contributions";
-import {ProjectsSection} from "@/components/Projects/ProjectSection";
+import { ProjectsSection } from "@/components/Projects/ProjectSection";
 import { CurrentProject } from "@/components/Projects/CurrentProject";
-import InfoV2 from "@/components/Info/InfoV2";
+import { Info } from "@/components/Info/Info";
+import { SocialSection } from "@/components/Info/SocialSection";
 
 export default function Home() {
   return (
-    <div className="bg-primary max-w-4xl mx-auto h-full font-mono text-white">
-      <div
-        className=" space-y-12"
-      >
-        <InfoV2 />
+    <div className="max-w-4xl mx-auto">
+      <div className=" space-y-12">
+        <Info />
 
         <CurrentProject />
 
@@ -23,6 +22,8 @@ export default function Home() {
         <WritingsSection />
 
         <SkillsSection />
+
+        <SocialSection />
       </div>
     </div>
   );

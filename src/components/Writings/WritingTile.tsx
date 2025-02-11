@@ -1,6 +1,7 @@
 import React from "react";
 import { H3Heading } from "../H3Heading";
 import { Writings } from "@/app/Data/data";
+import Description from "../Description";
 
 interface WritingTileProps {
   writing: Writings;
@@ -15,7 +16,7 @@ export default function WritingTile({ writing }: WritingTileProps) {
       href={writing.link}
     >
       <H3Heading>{writing.title}</H3Heading>
-      <p className="text-sm text-muted-foreground">{writing.Date}</p>
+      <Description>{writing.Date}</Description>
     </a>
   );
 }

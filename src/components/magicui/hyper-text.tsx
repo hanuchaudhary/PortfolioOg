@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, MotionProps } from "motion/react";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 type CharacterSet = string[] | readonly string[];
@@ -45,6 +46,8 @@ export function HyperText({
   const MotionComponent = motion.create(Component, {
     forwardMotionProps: true,
   });
+
+  const router = useRouter();
 
   const [displayText, setDisplayText] = useState<string[]>(() =>
     children.split("")
@@ -114,13 +117,13 @@ export function HyperText({
     }, intervalDuration);
 
     return () => clearInterval(interval);
-  }, [children, duration, isAnimating, characterSet]);
+  }, [children, duration, isAnimating, characterSet, router]);
 
   return (
     <MotionComponent
       ref={elementRef}
       className={cn(
-        "overflow-hidden py-2 text-4xl lowercase font-semibold",
+        "overflow-hidden py-2 text-2xl md:text-4xl lowercase font-semibold",
         className
       )}
       onMouseEnter={handleAnimationTrigger}

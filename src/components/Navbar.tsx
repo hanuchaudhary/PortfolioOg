@@ -31,7 +31,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="flex max-w-4xl mx-auto pb-8 text-sm text-muted-foreground items-center gap-4">
+    <nav className="flex max-w-4xl mx-auto pb-8 text-sm text-muted-foreground items-center gap-2 md:gap-4">
       {links.map(({ href, text, key }) => (
         <h4
           className="hover:text-blue-500 duration-300 transition-colors"

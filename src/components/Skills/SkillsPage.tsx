@@ -9,9 +9,9 @@ export function SkillsPage() {
     <div className="max-w-4xl mx-auto min-h-screen">
       <div className="flex text-4xl font-semibold items-center gap-2">
         <Star />
-        <HyperText startOnView={true}>skills and technologies</HyperText>
+        <HyperText>skills and technologies</HyperText>
       </div>
-      <div className="mt-8 space-y-4 flex flex-wrap gap-2">
+      <div className="mt-8 flex flex-wrap gap-1">
         {skillsData.map((skill) => (
           <SkillTag skill={skill} />
         ))}
