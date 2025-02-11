@@ -3,10 +3,11 @@ import { H3Heading } from "../H3Heading";
 import { ArrowUpRight } from "lucide-react";
 import { Project } from "@/app/Data/data";
 import { SkillTag } from "../Skills/SkillTag";
+import Description from "../Description";
 
 export default function ProjectCard(project: Project) {
   return (
-    <div className="border space-y-3 group border-muted-foreground/40 p-6 hover:border-blue-500 transition-colors duration-300">
+    <div className="border space-y-3 group border-muted-foreground/40 md:p-6 p-4 hover:border-blue-500 transition-colors duration-300">
       <a
         href={project.liveLink ? project.liveLink : project.githubLink}
         target="_blank"
@@ -16,13 +17,15 @@ export default function ProjectCard(project: Project) {
         <H3Heading>{project.title}</H3Heading>
         <ArrowUpRight className="w-6 h-6 group-hover:text-blue-500 transition-colors duration-300" />
       </a>
-      <p className="mt-2 text-muted-foreground">{project.description}</p>
+      <Description>
+        {project.description}
+      </Description>
 
       <div>
         <h4 className="text-lg font-semibold">learnings</h4>
         <ul className="mt-2 list-disc list-inside text-muted-foreground">
           {project.learnings?.map((learning, index) => (
-            <li className="list-decimal" key={index}>{learning}</li>
+            <li className="list-decimal md:text-base text-sm" key={index}>{learning}</li>
           ))}
         </ul>
       </div>
