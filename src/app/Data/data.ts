@@ -4,6 +4,8 @@ export interface Project {
     description: string;
     liveLink: string;
     githubLink: string;
+    technologies?: string[];
+    learnings?: string[];
 }
 
 export interface OpenSourceContribution {
@@ -14,13 +16,13 @@ export interface OpenSourceContribution {
     link: string;
 }
 
-export interface Blogs {
+export interface Writings {
     title: string;
     link: string;
     Date: string;
 }
 
-export const Skills: string[] = [
+export const skillsData: string[] = [
     'TypeScript',
     'JavaScript',
     'React',
@@ -57,11 +59,13 @@ export const Skills: string[] = [
     'Vercel',
 ];
 
-export const Projects: Project[] = [
+export const projectsData: Project[] = [
     {
         id: 1,
         title: "CoursePros",
         description: "An online learning platform for students and teachers.",
+        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
         liveLink: "https://50xcourses.vercel.app/",
         githubLink: "https://github.com/hanuchaudhary/courseApp"
     },
@@ -70,21 +74,27 @@ export const Projects: Project[] = [
         title: "Instagram",
         description: "end-to-end instagram clone with chat, reels, etc.",
         liveLink: "x",
-        githubLink: "https://github.com/hanuchaudhary/instagram"
+        githubLink: "https://github.com/hanuchaudhary/instagram",
+        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
     },
     {
         id: 3,
         title: "50xOpportunities",
         description: "platform where people can create jobs and find and apply for them.",
         liveLink: "https://50x0pportunities.vercel.app/jobs",
-        githubLink: "https://github.com/hanuchaudhary/50x0pportunities"
+        githubLink: "https://github.com/hanuchaudhary/50x0pportunities",
+        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
     },
     {
         id: 4,
         title: "Anonymous Comments",
         description: "application that allows users to share feedback anonymously.",
         liveLink: "https://anonymous-comments.vercel.app/",
-        githubLink: "https://github.com/hanuchaudhary/anonymous-comments"
+        githubLink: "https://github.com/hanuchaudhary/anonymous-comments",
+        technologies: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
+        learnings: ["React", "Nextjs", "Tailwind Css", "MongoDB", "ExpressJs"],
     },
 ];
 
@@ -98,7 +108,7 @@ export const OpenSourceContributions: OpenSourceContribution[] = [
     },
 ];
 
-export const Blogs: Blogs[] = [
+export const writingsData: Writings[] = [
     {
         title: "Setting up Tailwind CSS in a dJango project on windows",
         link: "https://medium.com/@kushchaudharyog/setting-up-tailwind-css-in-a-django-project-on-windows-ffe0d2132cdc",
