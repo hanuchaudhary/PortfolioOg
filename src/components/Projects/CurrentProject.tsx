@@ -1,11 +1,12 @@
 import React from "react";
 import { H2Heading } from "../H2Heading";
 import { H3Heading } from "../H3Heading";
+import { Star } from "../Star";
 
 export function CurrentProject() {
   return (
     <div className="projects mt-6 space-y-5">
-      <H2Heading>* currently working on</H2Heading>
+      <H2Heading>currently working on</H2Heading>
       <div className="flex flex-col">
         <H3Heading>
           <h3 className="font-semibold text-xl">

@@ -7,7 +7,7 @@ import { H3Heading } from "../H3Heading";
 export function Contributions() {
   return (
     <div className="space-y-5">
-      <H2Heading>* open Source Contributions</H2Heading>
+      <H2Heading>open Source Contributions</H2Heading>
       <div className="space-y-5 text-neutral-400">
         {OpenSourceContributions.map((contribution) => (
           <a

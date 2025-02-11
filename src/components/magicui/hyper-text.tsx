@@ -26,7 +26,7 @@ interface HyperTextProps extends MotionProps {
 }
 
 const DEFAULT_CHARACTER_SET = Object.freeze(
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")
 ) as readonly string[];
 
 const getRandomInt = (max: number): number => Math.floor(Math.random() * max);
@@ -37,7 +37,7 @@ export function HyperText({
   duration = 800,
   delay = 0,
   as: Component = "div",
-  startOnView = true,
+  startOnView = false,
   animateOnHover = false,
   characterSet = DEFAULT_CHARACTER_SET,
   ...props
@@ -47,7 +47,7 @@ export function HyperText({
   });
 
   const [displayText, setDisplayText] = useState<string[]>(() =>
-    children.split(""),
+    children.split("")
   );
   const [isAnimating, setIsAnimating] = useState(false);
   const iterationCount = useRef(0);
@@ -78,7 +78,7 @@ export function HyperText({
           observer.disconnect();
         }
       },
-      { threshold: 0.1, rootMargin: "-30% 0px -30% 0px" },
+      { threshold: 0.1, rootMargin: "-30% 0px -30% 0px" }
     );
 
     if (elementRef.current) {
@@ -102,9 +102,9 @@ export function HyperText({
             letter === " "
               ? letter
               : index <= iterationCount.current
-                ? children[index]
-                : characterSet[getRandomInt(characterSet.length)],
-          ),
+              ? children[index]
+              : characterSet[getRandomInt(characterSet.length)]
+          )
         );
         iterationCount.current = iterationCount.current + 0.1;
       } else {
@@ -119,7 +119,10 @@ export function HyperText({
   return (
     <MotionComponent
       ref={elementRef}
-      className={cn("overflow-hidden py-2 text-4xl font-bold", className)}
+      className={cn(
+        "overflow-hidden py-2 text-4xl lowercase font-semibold",
+        className
+      )}
       onMouseEnter={handleAnimationTrigger}
       {...props}
     >
