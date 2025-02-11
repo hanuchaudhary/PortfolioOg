@@ -1,27 +1,25 @@
 import { Blogs } from "@/app/Data/data";
 import React from "react";
+import { H2Heading } from "../H2Heading";
+import { H3Heading } from "../H3Heading";
 
 export function WritingsPage() {
   return (
-    <div className="space-y-1">
-      <h1 className="text-lg font-semibold">Writings</h1>
-      <ul className="text-sm text-neutral-400">
+    <div className="space-y-5">
+      <H2Heading>* writings</H2Heading>
+      <div className="space-y-3">
         {Blogs.map((blog) => (
-          <li
+          <a
             key={blog.title}
-            className="flex justify-between items-center gap-2"
+            target="_blank"
+            className="group flex items-center justify-between"
+            href={blog.link}
           >
-            <a
-              target="_blank"
-              className="underline hover:text-emerald-100 transition-colors text-white"
-              href={blog.link}
-            >
-              {blog.title}
-            </a>
-            <p className="text-xs">{blog.Date}</p>
-          </li>
+            <H3Heading>{blog.title}</H3Heading>
+            <p className="text-sm text-muted-foreground">{blog.Date}</p>
+          </a>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

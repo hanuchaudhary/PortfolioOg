@@ -5,7 +5,7 @@ export function Info() {
     <>
       <div className="info">
         <ul className="text-sm text-neutral-400">
-          <li>I&apos;m a full-stack engineer from India.</li>
+          <li>I&apos;m a full-stack engineer from India. </li>
           <li>
             Write technical blogs on{" "}
             <span>

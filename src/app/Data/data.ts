@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
     id: number;
     title: string;
     description: string;
@@ -6,7 +6,7 @@ interface Project {
     githubLink: string;
 }
 
-interface OpenSourceContribution {
+export interface OpenSourceContribution {
     id: number;
     title: string;
     description: string;
@@ -14,7 +14,7 @@ interface OpenSourceContribution {
     link: string;
 }
 
-interface Blogs {
+export interface Blogs {
     title: string;
     link: string;
     Date: string;

@@ -1,26 +1,29 @@
 import { OpenSourceContributions } from "@/app/Data/data";
 import Image from "next/image";
 import React from "react";
+import { H2Heading } from "../H2Heading";
+import { H3Heading } from "../H3Heading";
 
 export function Contributions() {
   return (
-    <div className="space-y-1">
-      <h1 className="text-lg font-semibold">Open Source Contributions</h1>
-      <ul className="space-y-1 text-sm text-neutral-400">
+    <div className="space-y-5">
+      <H2Heading>* open Source Contributions</H2Heading>
+      <div className="space-y-5 text-neutral-400">
         {OpenSourceContributions.map((contribution) => (
-          <li key={contribution.id} className="flex items-center gap-2">
-            <Image width={20} height={20} src={"/github.svg"} alt="" />
-            <a
-              target="_blank"
-              className="underline hover:text-emerald-100 transition-colors text-white"
-              href={contribution.link}
-            >
-              {contribution.title}
-            </a>
-            <p>{contribution.description}</p>
-          </li>
+          <a
+            key={contribution.id}
+            target="_blank"
+            className="transition-colors text-white group"
+            href={contribution.link}
+          >
+            <div className="flex items-center space-x-2">
+              <Image width={20} height={20} src={"/github.svg"} alt="" />
+              <H3Heading>{contribution.title}</H3Heading>
+            </div>
+            <p className="text-muted-foreground">{contribution.description}</p>
+          </a>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
