@@ -12,8 +12,8 @@ export function SkillsPage() {
         <HyperText>skills and technologies</HyperText>
       </div>
       <div className="mt-8 flex flex-wrap gap-1">
-        {skillsData.map((skill) => (
-          <SkillTag key={skill} skill={skill} />
+        {skillsData.map((skill,index) => (
+          <SkillTag key={index} skill={skill} />
         ))}
       </div>
     </div>

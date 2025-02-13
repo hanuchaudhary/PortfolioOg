@@ -3,6 +3,7 @@ import { HyperText } from "../magicui/hyper-text";
 import ProjectCard from "./ProjectCard";
 import { projectsData } from "@/app/Data/data";
 import { Star } from "../Star";
+import { currentProject } from "./CurrentProject";
 
 export default function ProjectPage() {
   return (
@@ -12,6 +13,7 @@ export default function ProjectPage() {
         <HyperText>projects</HyperText>
       </div>
       <div className="mt-6 space-y-10">
+        {currentProject && <ProjectCard {...currentProject} />}
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

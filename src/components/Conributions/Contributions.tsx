@@ -10,9 +10,9 @@ export function Contributions() {
     <div className="space-y-5">
       <H2Heading>contributions</H2Heading>
       <div className="space-y-5 text-neutral-400">
-        {OpenSourceContributions.map((contribution) => (
+        {OpenSourceContributions.map((contribution,index) => (
           <a
-            key={contribution.id}
+            key={index}
             target="_blank"
             className="transition-colors text-white group"
             href={contribution.link}
