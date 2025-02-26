@@ -28,7 +28,7 @@ export function Info() {
         <a
           href="https://dev.to/hanuchaudhary"
           target="_blank"
-          className="text-blue-100 border-b border-blue-100/30 border-dashed leading-none hover:border-blue-100/70 transition-colors" 
+          className="text-orange-100 border-b border-orange-100/30 border-dashed leading-none hover:border-orange-100/70 transition-colors" 
         >
           Dev.to
         </a>{" "}
@@ -36,7 +36,7 @@ export function Info() {
         <a
           href="https://medium.com/@kushchaudharyog"
           target="_blank"
-          className="text-blue-100 border-b border-blue-100/30 border-dashed leading-none hover:border-blue-100/70 transition-colors" 
+          className="text-orange-100 border-b border-orange-100/30 border-dashed leading-none hover:border-orange-100/70 transition-colors" 
         >
           Medium
         </a>

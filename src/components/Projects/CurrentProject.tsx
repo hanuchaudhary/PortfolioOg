@@ -42,7 +42,7 @@ export function CurrentProject() {
             <a
               target="_blank"
               href={currentProject.liveLink || currentProject.githubLink}
-              className="hover:text-blue-100 transition-colors"
+              className="hover:text-orange-100 transition-colors"
             >
               {currentProject.title}
             </a>
