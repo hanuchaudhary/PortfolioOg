@@ -1,7 +1,7 @@
 import React from "react";
 import { HyperText } from "../magicui/hyper-text";
 import ProjectCard from "./ProjectCard";
-import { projectsData } from "@/app/Data/data";
+import { projectsData } from "@/Data/data";
 import { Star } from "../Star";
 import { currentProject } from "./CurrentProject";
 

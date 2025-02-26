@@ -1,7 +1,7 @@
 import React from "react";
 import { Star } from "../Star";
 import { HyperText } from "../magicui/hyper-text";
-import { skillsData } from "@/app/Data/data";
+import { skillsData } from "@/Data/data";
 import { SkillTag } from "./SkillTag";
 
 export function SkillsPage() {

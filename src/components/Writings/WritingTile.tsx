@@ -1,6 +1,6 @@
 import React from "react";
 import { H3Heading } from "../H3Heading";
-import { Writings } from "@/app/Data/data";
+import { Writings } from "@/Data/data";
 import Description from "../Description";
 
 interface WritingTileProps {

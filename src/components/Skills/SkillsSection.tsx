@@ -1,4 +1,4 @@
-import { skillsData } from "@/app/Data/data";
+import { skillsData } from "@/Data/data";
 import React from "react";
 import { SkillTag } from "./SkillTag";
 import { H2Heading } from "../H2Heading";

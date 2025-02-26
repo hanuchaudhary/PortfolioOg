@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
-import { Project } from "@/app/Data/data";
+import { Project } from "@/Data/data";
 import { SkillTag } from "../Skills/SkillTag";
 import Description from "../Description";
 

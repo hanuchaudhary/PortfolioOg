@@ -1,4 +1,4 @@
-import { projectsData } from "@/app/Data/data";
+import { projectsData } from "@/Data/data";
 import React from "react";
 import ProjectTile from "./ProjectTile";
 import { H2Heading } from "../H2Heading";

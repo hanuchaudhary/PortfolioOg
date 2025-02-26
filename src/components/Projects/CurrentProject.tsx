@@ -2,7 +2,7 @@ import React from "react";
 import { H2Heading } from "../H2Heading";
 import { H3Heading } from "../H3Heading";
 import Description from "../Description";
-import { Project } from "@/app/Data/data";
+import { Project } from "@/Data/data";
 
 export const currentProject: Project = {
   id: 69,

@@ -1,7 +1,7 @@
 import React from "react";
 import { HyperText } from "../magicui/hyper-text";
 import { Star } from "../Star";
-import { writingsData } from "@/app/Data/data";
+import { writingsData } from "@/Data/data";
 import WritingTile from "./WritingTile";
 
 export default function WritingsPage() {

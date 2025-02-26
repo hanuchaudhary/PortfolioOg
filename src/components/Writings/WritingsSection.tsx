@@ -1,4 +1,4 @@
-import { writingsData } from "@/app/Data/data";
+import { writingsData } from "@/Data/data";
 import React from "react";
 import { H2Heading } from "../H2Heading";
 import WritingTile from "./WritingTile";

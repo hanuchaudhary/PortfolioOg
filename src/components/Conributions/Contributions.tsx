@@ -1,4 +1,4 @@
-import { OpenSourceContributions } from "@/app/Data/data";
+import { OpenSourceContributions } from "@/Data/data";
 import Image from "next/image";
 import React from "react";
 import { H2Heading } from "../H2Heading";
@@ -9,7 +9,7 @@ export function Contributions() {
   return (
     <div className="space-y-5">
       <H2Heading>contributions</H2Heading>
-      <div className="space-y-5 text-neutral-400">
+      <div className="flex flex-col gap-4 text-neutral-400">
         {OpenSourceContributions.map((contribution,index) => (
           <a
             key={index}

@@ -1,6 +1,6 @@
 import React from "react";
 import { H3Heading } from "../H3Heading";
-import { Project } from "@/app/Data/data";
+import { Project } from "@/Data/data";
 import Description from "../Description";
 import { ArrowUpRight } from "lucide-react";
 
