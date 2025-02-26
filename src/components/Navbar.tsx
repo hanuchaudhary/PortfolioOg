@@ -19,7 +19,7 @@ export default function Navbar() {
     const key = event.key.toLowerCase();
     const link = links.find((link) => link.key === key);
     if (link) {
-      router.push(link.href, { scroll: false });
+      router.push(link.href, { scroll: true });
     }
   };
 
@@ -31,10 +31,10 @@ export default function Navbar() {
   });
 
   return (
-    <nav className="flex max-w-4xl mx-auto pb-8 text-sm text-muted-foreground items-center gap-2 md:gap-4">
+    <nav className="flex max-w-4xl mx-auto pb-8 text-sm text-muted-foreground items-center gap-4">
       {links.map(({ href, text, key }) => (
         <h4
-          className="hover:text-blue-500 duration-300 transition-colors"
+          className="hover:text-blue-500 sm:text-sm text-xs duration-300 transition-colors"
           key={key}
         >
           <Link href={href}>

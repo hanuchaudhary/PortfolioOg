@@ -10,7 +10,7 @@ import { SocialSection } from "@/components/Info/SocialSection";
 export default function Home() {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className=" space-y-12">
+      <div className="md:space-y-12 space-y-8">
         <Info />
 
         <CurrentProject />

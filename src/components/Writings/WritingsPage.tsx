@@ -11,7 +11,7 @@ export default function WritingsPage() {
         <Star />
         <HyperText>writings</HyperText>
       </div>
-      <div className="mt-8 space-y-4">
+      <div className="md:mt-6 mt-4 space-y-4">
         {writingsData.map((writing) => (
           <WritingTile key={writing.title} writing={writing} />
         ))}

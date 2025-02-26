@@ -6,6 +6,6 @@ export default function Description({
   children: React.ReactNode;
 }) {
   return (
-    <p className="text-muted-foreground md:text-base text-sm">{children}</p>
+    <p className="text-muted-foreground md:text-sm text-xs">{children}</p>
   );
 }

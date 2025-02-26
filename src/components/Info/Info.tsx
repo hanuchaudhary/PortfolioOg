@@ -18,16 +18,17 @@ export function Info() {
       </h2>
 
       <Description>
-        I&apos;m a 20 y/o full-stack engineer, currently pursuing B.Tech in Computer Science
-        with niche expertise in building highly robust, secure, and scalable
-        applications using the latest and most efficient technologies. My
-        mission is to deliver innovative solutions that create value for
-        businesses and end-users while ensuring unparalleled performance and
-        scalability.<br/> Write technical blogs on{" "}
+        I&apos;m a 20 y/o full-stack engineer, currently pursuing B.Tech in
+        Computer Science with niche expertise in building highly robust, secure,
+        and scalable applications using the latest and most efficient
+        technologies. My mission is to deliver innovative solutions that create
+        value for businesses and end-users while ensuring unparalleled
+        performance and scalability.
+        <br />I write technical blogs on{" "}
         <a
           href="https://dev.to/hanuchaudhary"
           target="_blank"
-          className="text-blue-100 underline"
+          className="text-blue-100 border-b border-blue-100/30 border-dashed leading-none hover:border-blue-100/70 transition-colors" 
         >
           Dev.to
         </a>{" "}
@@ -35,7 +36,7 @@ export function Info() {
         <a
           href="https://medium.com/@kushchaudharyog"
           target="_blank"
-          className="text-blue-100 underline"
+          className="text-blue-100 border-b border-blue-100/30 border-dashed leading-none hover:border-blue-100/70 transition-colors" 
         >
           Medium
         </a>

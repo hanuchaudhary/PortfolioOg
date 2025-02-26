@@ -11,7 +11,7 @@ export function SkillsPage() {
         <Star />
         <HyperText>skills and technologies</HyperText>
       </div>
-      <div className="mt-8 flex flex-wrap gap-1">
+      <div className="md:mt-6 mt-4 flex flex-wrap gap-1">
         {skillsData.map((skill,index) => (
           <SkillTag key={index} skill={skill} />
         ))}

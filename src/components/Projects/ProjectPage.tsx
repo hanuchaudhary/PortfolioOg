@@ -12,7 +12,7 @@ export default function ProjectPage() {
         <Star />
         <HyperText>projects</HyperText>
       </div>
-      <div className="mt-6 space-y-10">
+      <div className="md:mt-6 mt-4 space-y-10">
         {currentProject && <ProjectCard {...currentProject} />}
         {projectsData.map((project, index) => (
           <ProjectCard key={index} {...project} />

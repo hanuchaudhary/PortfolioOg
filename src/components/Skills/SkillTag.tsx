@@ -22,7 +22,7 @@ export function SkillTag({ skill }: { skill: string }) {
   return (
     <span
       className={`
-        md:text-base text-sm 
+        md:text-sm text-xs 
         ${isHighlighted ? "text-blue-500" : "text-neutral-300"}
         bg-neutral-900 border hover:text-blue-500 
         transition-colors duration-300 border-neutral-700 
