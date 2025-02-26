@@ -26,7 +26,7 @@ export const skillsData: string[] = [
     "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Sass",
     "JavaScript", "React", "React Router", "React Hook Form",
     "Git", "GitHub", "GitHub Actions", "Netlify", "Vercel",
-    "NPM", "Yarn", "Node.js", "Express", "Markdown",
+    "NPM", "Yarn", "Node.js", "Express","JQuery", "Markdown",
     "TypeScript", "Next.js", "Remix", "Firebase",
     "MongoDB", "MySQL", "PostgreSQL", "Redis", "Supabase",
     "Nginx", "Cloudflare", "BullMQ", "Nodemon", "Socket.io",

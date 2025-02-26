@@ -16,6 +16,7 @@ export const currentProject: Project = {
     "Creating a scheduling system",
     "Media management",
     "Payment integration",
+    "Server sent events",
   ],
   technologies: [
     "Next.js",
