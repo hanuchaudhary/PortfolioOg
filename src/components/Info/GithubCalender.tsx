@@ -1,8 +1,8 @@
 "use client";
+
 import dynamic from "next/dynamic";
 import { useCallback, useState } from "react";
 import { Activity } from "react-github-calendar";
-import { H3Heading } from "../H3Heading";
 import Description from "../Description";
 
 const GitHubCalendar = dynamic(() => import("react-github-calendar"), {
@@ -30,7 +30,7 @@ function GithubCalender() {
       <div>
         <h2 className="md:text-2xl text-xl font-semibold text-white/70">Proof of Work</h2>
         <Description>
-          All the work I have done so far in public && people's appreciation
+          All the work I have done so far in public &amp;&amp; people&apos;s appreciation
         </Description>
       </div>
       <GitHubCalendar
