@@ -8,7 +8,7 @@ export function Info() {
   return (
     <div>
       <HyperText className="text-4xl">Kush Chaudhary</HyperText>
-      <h2 className="text-muted-foreground flex items-center gap-3 mb-2">
+      <h2 className="text-muted-foreground flex items-center gap-3">
         Uttar Pradesh, India{" "}
         <Image
           src={"/Flag_of_India.svg.webp"}
@@ -17,12 +17,8 @@ export function Info() {
           alt="india"
         />
       </h2>
-      <div className="my-4">
-        <GitHubCalendar />
-      </div>
-
       <Description>
-        <br />I write technical blogs on{" "}
+        I write technical blogs on{" "}
         <a
           href="https://dev.to/hanuchaudhary"
           target="_blank"
@@ -39,6 +35,9 @@ export function Info() {
           Medium
         </a>
       </Description>
+      <div className="md:my-8 my-4">
+        <GitHubCalendar />
+      </div>
     </div>
   );
 }

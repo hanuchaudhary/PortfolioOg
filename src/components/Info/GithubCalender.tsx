@@ -28,7 +28,7 @@ function GithubCalender() {
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="text-2xl font-semibold">Proof of Work</h2>
+        <h2 className="md:text-2xl text-xl font-semibold text-white/70">Proof of Work</h2>
         <Description>
           All the work I have done so far in public && people's appreciation
         </Description>
