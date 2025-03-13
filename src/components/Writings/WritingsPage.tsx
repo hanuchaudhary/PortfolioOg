@@ -6,7 +6,7 @@ import WritingTile from "./WritingTile";
 
 export default function WritingsPage() {
   return (
-    <div className="max-w-4xl mx-auto min-h-screen">
+    <div className="max-w-3xl mx-auto min-h-screen">
       <div className="flex md:text-4xl text-xl font-semibold items-center gap-2">
         <Star />
         <HyperText>writings</HyperText>

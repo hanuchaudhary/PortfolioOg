@@ -149,14 +149,14 @@ export const OpenSourceContributions: OpenSourceContribution[] = [
     id: 1,
     title: "SWOC/Leetcode-Journal",
     description: "Social Winter Of Code 2025 project.",
-    image: "/githubLink.svg",
+    image: "/LC.png",
     link: "https://github.com/hanuchaudhary/Leetcode-Journal",
   },
   {
     id: 2,
     title: "100xdev/photo-ai",
     description: "Implemented Transaction Management & Purchase History UI",
-    image: "/githubLink.svg",
+    image: "/100xdev.webp",
     link: "https://github.com/code100x/photo-ai/pull/36",
   },
 ];

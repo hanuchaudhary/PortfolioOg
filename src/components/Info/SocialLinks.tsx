@@ -21,7 +21,7 @@ export function SocialLinks() {
           <a
             key={social.link}
             target="_blank"
-            className="group underline md:text-xl text-base font-semibold hover:text-orange-500 text-orange-50 transition-colors duration-300"
+            className="group border-b border-dashed border-stone-200/60 leading-none md:text-base text-sm text-stone-300 hover:text-orange-500 hover:border-orange-500 transition-colors duration-300"
             rel="noreferrer"
             href={social.link}
           >

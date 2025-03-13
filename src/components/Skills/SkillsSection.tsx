@@ -16,7 +16,7 @@ export function SkillsSection() {
   return (
     <div className="space-y-5">
       <H2Heading>primary skills</H2Heading>
-      <ul className="flex flex-wrap text-neutral-400">
+      <ul className="flex flex-wrap text-stone-400">
         {primarySkills.map((skill,index) => (
           <SkillTag key={index} skill={skill} />
         ))}

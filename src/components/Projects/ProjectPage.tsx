@@ -7,7 +7,7 @@ import { currentProject } from "./CurrentProject";
 
 export default function ProjectPage() {
   return (
-    <div className="max-w-4xl mx-auto min-h-screen">
+    <div className="max-w-3xl mx-auto min-h-screen">
       <div className="flex text-4xl font-semibold items-center gap-2">
         <Star />
         <HyperText>projects</HyperText>

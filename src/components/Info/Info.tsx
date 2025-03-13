@@ -35,7 +35,7 @@ export function Info() {
           Medium
         </a>
       </Description>
-      <div className="md:my-8 my-4">
+      <div className="md:my-10 my-4">
         <GitHubCalendar />
       </div>
     </div>

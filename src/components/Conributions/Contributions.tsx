@@ -9,16 +9,22 @@ export function Contributions() {
   return (
     <div className="space-y-5">
       <H2Heading>contributions</H2Heading>
-      <div className="flex flex-col gap-4 text-neutral-400">
-        {OpenSourceContributions.map((contribution,index) => (
+      <div className="flex flex-col gap-4 text-stone-400">
+        {OpenSourceContributions.map((contribution, index) => (
           <a
             key={index}
             target="_blank"
-            className="transition-colors text-white group"
+            className="transition-colors text-stone-50 group"
             href={contribution.link}
           >
             <div className="flex items-center space-x-2">
-              <Image width={20} height={20} src={"/github.svg"} alt="" />
+              <Image
+                className="rounded-full overflow-hidden"
+                width={25}
+                height={25}
+                src={contribution.image}
+                alt=""
+              />
               <H3Heading>{contribution.title}</H3Heading>
             </div>
             <Description>{contribution.description}</Description>

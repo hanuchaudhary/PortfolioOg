@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useCallback, useState } from "react";
 import { Activity } from "react-github-calendar";
 import Description from "../Description";
+import { H2Heading } from "../H2Heading";
 
 const GitHubCalendar = dynamic(() => import("react-github-calendar"), {
   ssr: false,
@@ -28,7 +29,7 @@ function GithubCalender() {
   return (
     <div className="space-y-4">
       <div>
-        <h2 className="md:text-2xl text-xl font-semibold text-white/70">Proof of Work</h2>
+        <H2Heading>Proof of Work</H2Heading>
         <Description>
           All the work I have done so far in public &amp;&amp; people&apos;s appreciation
         </Description>

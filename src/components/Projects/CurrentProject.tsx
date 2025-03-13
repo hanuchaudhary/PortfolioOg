@@ -38,7 +38,7 @@ export function CurrentProject() {
       <H2Heading>currently working on</H2Heading>
       <div className="flex flex-col">
         <H3Heading>
-          <span className="font-semibold text-xl w-full">
+          <span className="font-semibold md:text-[16px] text-base w-full">
             <a
               target="_blank"
               href={currentProject.liveLink || currentProject.githubLink}
