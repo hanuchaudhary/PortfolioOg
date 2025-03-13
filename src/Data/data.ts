@@ -153,9 +153,10 @@ export const OpenSourceContributions: OpenSourceContribution[] = [
     link: "https://github.com/hanuchaudhary/Leetcode-Journal",
   },
   {
-    id: 2,
+    id: 3,
     title: "100xdev/photo-ai",
-    description: "Implemented Transaction Management & Purchase History UI",
+    description:
+      "Merged PRs for saving transactions in DB, refactoring the entire dashboard UI and theme toggle.",
     image: "/100xdev.webp",
     link: "https://github.com/code100x/photo-ai/pull/36",
   },
