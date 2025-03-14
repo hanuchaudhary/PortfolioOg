@@ -13,23 +13,29 @@ export default function ProjectCard(project: Project) {
         rel="noopener noreferrer"
         className="flex items-center justify-between"
       >
-        <h2 className="md:text-2xl text-xl font-semibold group-hover:text-orange-500 transition-colors duration-300">{project.title}</h2>
+        <h2 className="md:text-2xl text-xl font-semibold group-hover:text-orange-500 transition-colors duration-300">
+          {project.title}
+        </h2>
         <ArrowUpRight className="w-6 h-6 group-hover:text-orange-500 transition-colors duration-300" />
       </a>
-      <Description>
-        {project.description}
-      </Description>
+      <Description>{project.description}</Description>
 
       <div>
-        <h4 className="md:text-lg text-base font-semibold">learnings</h4>
+        <h4 className="md:text-base text-sm font-semibold text-white/80">
+          learnings
+        </h4>
         <ul className="mt-2 list-disc list-inside text-muted-foreground">
           {project.learnings?.map((learning, index) => (
-            <li className="list-decimal md:text-base text-sm" key={index}>{learning}</li>
+            <li className="list-decimal md:text-sm text-xs " key={index}>
+              {learning}
+            </li>
           ))}
         </ul>
       </div>
       <div>
-        <h4 className="md:text-lg text-base font-semibold">tecnologies</h4>
+        <h4 className="text-sm md:text-base font-semibold text-white/80">
+          tecnologies
+        </h4>
         <div className="mt-2 flex flex-wrap gap-1">
           {project.technologies?.map((technology, index) => (
             <SkillTag key={index} skill={technology} />

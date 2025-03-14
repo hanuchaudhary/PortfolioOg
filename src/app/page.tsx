@@ -6,12 +6,15 @@ import { ProjectsSection } from "@/components/Projects/ProjectSection";
 import { CurrentProject } from "@/components/Projects/CurrentProject";
 import { Info } from "@/components/Info/Info";
 import { SocialSection } from "@/components/Info/SocialSection";
+import GitHubCalendar from "@/components/Info/GithubCalender";
 
 export default function Home() {
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="md:space-y-12 space-y-8">
+      <div className="space-y-10">
         <Info />
+
+        <GitHubCalendar />
 
         <CurrentProject />
 

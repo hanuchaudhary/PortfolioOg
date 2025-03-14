@@ -2,13 +2,12 @@ import React from "react";
 import { HyperText } from "@/components/magicui/hyper-text";
 import Image from "next/image";
 import Description from "../Description";
-import GitHubCalendar from "./GithubCalender";
 
 export function Info() {
   return (
     <div>
       <HyperText className="text-4xl">Kush Chaudhary</HyperText>
-      <h2 className="text-muted-foreground flex items-center gap-3">
+      <h2 className="text-muted-foreground md:text-sm text-xs flex items-center gap-3">
         Uttar Pradesh, India{" "}
         <Image
           src={"/Flag_of_India.svg.webp"}
@@ -35,9 +34,6 @@ export function Info() {
           Medium
         </a>
       </Description>
-      <div className="md:my-10 my-4">
-        <GitHubCalendar />
-      </div>
     </div>
   );
 }
