@@ -30,12 +30,12 @@ export const skillsData: string[] = [
     "TypeScript", "Next.js", "Remix", "Firebase",
     "MongoDB", "MySQL", "PostgreSQL", "Redis", "Supabase",
     "Nginx", "Cloudflare", "BullMQ", "Nodemon", "Socket.io",
-    "JWT", "Auth.js",
+    "JWT", "Auth.js","Prisma",
     "ESLint", "Storybook", "Postman", "Monorepo",
     "GNU Bash", "Powershell", "Python", "Docker", "Amazon AWS",
     "Nginx", "Redis", "Cloudflare",
     "React Native", "Vite", "Blender",
-    "C", "Stack Overflow"
+    "C", "Stack Overflow","Zustand", "Framer Motion",
 ];
 
 export const projectsData: Project[] = [
