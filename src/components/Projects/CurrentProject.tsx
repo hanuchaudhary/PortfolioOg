@@ -8,15 +8,16 @@ export const currentProject: Project = {
   id: 69,
   title: "CrossPostHub",
   description:
-    "SaaS platform for cross-posting content on multiple social media platforms. This tool helps users to efficiently manage and distribute their content across various social networks, saving time and effort. It includes features like scheduling and AI caption to ensure the best performance for each post.",
+    "A SaaS platform for seamless cross-posting across multiple social media platforms. It includes AI-generated captions, post scheduling, media management, and payment integration.",
   githubLink: "https://github.com/hanuchaudhary/CrossPostHub.",
-  learnings: [
-    "Building a SaaS platform",
-    "Working with social media APIs",
-    "Creating a scheduling system",
-    "Media management",
-    "Payment integration",
-    "Server sent events",
+  keyFeatures: [
+    "Multi-platform content posting",
+    "AI-generated captions",
+    "Post scheduling",
+    "Image & media management",
+    "Built-in image editor",
+    "Secure payment processing",
+    "Real-time updates (SSE)",
   ],
   technologies: [
     "Next.js",
@@ -27,8 +28,7 @@ export const currentProject: Project = {
     "PostgreSQL",
     "Redis",
     "BullMQ",
-    "OAuth2.0 | OAuth1.0",
-    "GeminiAPI",
+    "OAuth 2.0 / OAuth 1.0",
   ],
 };
 

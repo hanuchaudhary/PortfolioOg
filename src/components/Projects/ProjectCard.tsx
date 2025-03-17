@@ -21,20 +21,20 @@ export default function ProjectCard(project: Project) {
       <Description>{project.description}</Description>
 
       <div>
-        <h4 className="md:text-base text-sm font-semibold text-white/80">
-          learnings
+        <h4 className="md:text-base text-sm font-medium text-white/80">
+          Key Features
         </h4>
         <ul className="mt-2 list-disc list-inside text-muted-foreground">
-          {project.learnings?.map((learning, index) => (
-            <li className="list-decimal md:text-sm text-xs " key={index}>
-              {learning}
+          {project.keyFeatures?.map((feat, index) => (
+            <li className="list-decimal md:text-base text-sm " key={index}>
+              {feat}
             </li>
           ))}
         </ul>
       </div>
       <div>
-        <h4 className="text-sm md:text-base font-semibold text-white/80">
-          tecnologies
+        <h4 className="text-sm md:text-base font-medium text-white/80">
+          Tecnologies
         </h4>
         <div className="mt-2 flex flex-wrap gap-1">
           {project.technologies?.map((technology, index) => (
